@@ -14,10 +14,10 @@ pipeline {
     }
     post {
         success {
-            echo 'Python 脚本执行成功！'
+            echo 'Python test脚本执行成功！'
         }
         failure {
-            echo 'Python 脚本执行失败！'
+            echo 'Python test脚本执行失败！'
         }
     }
 }
