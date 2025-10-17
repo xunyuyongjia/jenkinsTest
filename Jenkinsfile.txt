@@ -1,0 +1,23 @@
+pipeline {
+    agent any  // 在任意可用节点执行（确保该节点已安装 Python）
+    stages {
+        stage('执行 Python 脚本') {
+            steps {
+                script {
+                   
+                        // Windows 系统：使用 python.exe 命令（需确保 Python 已加入环境变量）
+                        bat 'python C:\\Users\\yukeyong\\Desktop\\temp\\mypython.py'
+                    
+                }
+            }
+        }
+    }
+    post {
+        success {
+            echo 'Python 脚本执行成功！'
+        }
+        failure {
+            echo 'Python 脚本执行失败！'
+        }
+    }
+}
