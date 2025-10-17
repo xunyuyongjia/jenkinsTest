@@ -6,7 +6,7 @@ pipeline {
                 script {
                    
                         // Windows 系统：使用 python.exe 命令（需确保 Python 已加入环境变量）
-                        bat '"C:\\Users\\yukeyong\\Desktop\\project\\temp\\mypython.py"'
+                        bat 'python C:\\Users\\yukeyong\\Desktop\\project\\temp\\mypython.py'
                     
                 }
             }
